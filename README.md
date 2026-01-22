@@ -4,16 +4,28 @@ This repository contains the implementation of a parallelized Google PageRank al
 
 ## Project Description
 
-The goal of this project is to compute the PageRank vector and the largest eigenvalue of a left stochastic matrix using the power iteration method, applied to both real and randomly generated web graphs. The implementation uses MPI (Message Passing Interface) for parallelization to explore performance scaling.
+The goal of this project is to compute the PageRank vector and the largest eigenvalue of a left stochastic matrix using the power iteration method, applied to both real and randomly generated web graphs. 
+ - The implementation uses **MPI (Message Passing Interface)** to parallelize the computation and evaluate performance through:
+    - **Strong scaling** (fixed problem size)
+    - **Weak scaling** (problem size scales with number of processes)
+A more detailed description of strong/weak scaling results and execution instructions on the HPC cluster is available in **`report_hpc.pdf`**.
+    - 
 
 ---
 
-## Files in the Repository
+## 📂 Repository Structure
 
-- `MPI_GooglePageRank.cpp`: Main C++ file implementing the PageRank algorithm using MPI.
-- `Test_GooglePageRank.cpp`: Script for validating correctness using a 6×6 test matrix.
-- `script.pbs`: PBS job submission script for running the MPI code on a cluster.
-- `README.md`: This file.
+```text
+.
+├── MPI_GooglePageRank.cpp      # Main MPI PageRank implementation (power iteration + timing)
+├── Test_GooglePageRank.cpp     # Small 6×6 validation test for correctness
+├── script.pbs                  # PBS job submission script (cluster execution)
+├── README.md                   # Project overview + build/run instructions
+├── pbs_out.txt                 # Sample PBS standard output log from cluster run
+├── pbs_err.txt                 # Sample PBS standard error log from cluster run
+├── report_hpc.pdf              # Full report: theory + scaling results + run instructions
+└── task_hpc_mpi.pdf             # Original project task sheet (assignment description)
+```
 
 ---
 
