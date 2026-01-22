@@ -9,21 +9,18 @@ The goal of this project is to compute the PageRank vector and the largest eigen
     - **Strong scaling** (fixed problem size)
     - **Weak scaling** (problem size scales with number of processes)
 A more detailed description of strong/weak scaling results and execution instructions on the HPC cluster is available in **`report_hpc.pdf`**.
-    - 
-
 ---
-
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
 ├── MPI_GooglePageRank.cpp      # Main MPI PageRank implementation (power iteration + timing)
 ├── README.md                   # Project overview + build/run instructions
 ├── Test_GooglePageRank.cpp     # Small 6×6 validation test for correctness
-├── script.pbs                  # PBS job submission script (cluster execution)
-├── pbs_out.txt                 # Sample PBS standard output log from cluster run
 ├── pbs_err.txt                 # Sample PBS standard error log from cluster run
+├── pbs_out.txt                 # Sample PBS standard output log from cluster run
 ├── report_hpc.pdf              # Full report: theory + scaling results + run instructions
+├── script.pbs                  # PBS job submission script (cluster execution)
 └── task_hpc_mpi.pdf             # Original project task sheet (assignment description)
 ```
 
