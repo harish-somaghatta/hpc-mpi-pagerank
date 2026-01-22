@@ -2,13 +2,13 @@
 
 This repository contains the implementation of a parallelized Google PageRank algorithm using MPI, as part of the *High Performance Computing and Optimization* course at Technische Universität Bergakademie Freiberg.
 
-## 📌 Project Description
+## Project Description
 
 The goal of this project is to compute the PageRank vector and the largest eigenvalue of a left stochastic matrix using the power iteration method, applied to both real and randomly generated web graphs. The implementation uses MPI (Message Passing Interface) for parallelization to explore performance scaling.
 
 ---
 
-## 📁 Files in the Repository
+## Files in the Repository
 
 - `MPI_GooglePageRank.cpp`: Main C++ file implementing the PageRank algorithm using MPI.
 - `Test_GooglePageRank.cpp`: Script for validating correctness using a 6×6 test matrix.
@@ -17,7 +17,7 @@ The goal of this project is to compute the PageRank vector and the largest eigen
 
 ---
 
-## 🔧 Compilation Instructions
+## Compilation Instructions
 
 Compile the main code using the MPI C++ compiler:
 
@@ -27,7 +27,7 @@ mpic++ -o hpc_code.out MPI_GooglePageRank.cpp
 
 ---
 
-## 🚀 Running the Code
+## Running the Code
 
 You can execute the compiled binary as follows:
 
@@ -58,7 +58,7 @@ qsub script.pbs
 
 ---
 
-## ✅ Sample Output
+## Sample Output
 
 **Test Case (6×6 Matrix):**
 - Final PageRank vector: `[0.0238, 0.0238, 0.2778, 0.0952, 0.2143, 0.3651]`
@@ -70,7 +70,7 @@ qsub script.pbs
 
 ---
 
-## 📈 Performance Scaling
+## Performance Scaling
 
 ### Strong Scaling (Fixed Problem Size(10000×10000))
 
@@ -106,7 +106,7 @@ Where:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 - Random reproducible test cases for `n = 100`, `1000`, `10000` using seeded generation.
 - Validation against summation conditions (∑ri = 1, ri ≥ 0).
