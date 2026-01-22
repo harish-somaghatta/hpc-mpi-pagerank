@@ -18,9 +18,9 @@ A more detailed description of strong/weak scaling results and execution instruc
 ```text
 .
 ├── MPI_GooglePageRank.cpp      # Main MPI PageRank implementation (power iteration + timing)
+├── README.md                   # Project overview + build/run instructions
 ├── Test_GooglePageRank.cpp     # Small 6×6 validation test for correctness
 ├── script.pbs                  # PBS job submission script (cluster execution)
-├── README.md                   # Project overview + build/run instructions
 ├── pbs_out.txt                 # Sample PBS standard output log from cluster run
 ├── pbs_err.txt                 # Sample PBS standard error log from cluster run
 ├── report_hpc.pdf              # Full report: theory + scaling results + run instructions
