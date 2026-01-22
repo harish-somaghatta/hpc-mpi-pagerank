@@ -41,7 +41,7 @@ Where:
 
 ---
 
-## 📄 PBS Job Script
+## PBS Job Script
 
 To run the code on an HPC cluster using PBS:
 
@@ -92,7 +92,7 @@ qsub script.pbs
 
 ---
 
-## 📚 Theoretical Background
+## Theoretical Background
 
 The PageRank algorithm is based on the eigenvalue problem of a left stochastic matrix `P` derived from a web link matrix `L`. The power iteration method is used to compute the dominant eigenvector (PageRank vector), satisfying:
 
